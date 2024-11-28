@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <p>Siirry kentästä toiseen tab-näppäimellä.</p>
+<!--Lomakkeen määritys-->
+    <div  class="container">
+        <form id="userForm">    
+        <div class="row">
+            <div class="col-25">
+                <label for="userid">Käyttäjä ID:</label> 
+            </div>
+            <div class="col-75">
+                <input type="text" id="userid" name="userid"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="password">Salasana:</label>
+            </div>
+            <div class="col-75">
+                <input type="password" id="password" name="password"><br><br>
+            </div>
+        </div>   
+
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Nimi:</label>
+            </div>
+            <div class="col-75"> 
+                <input type="text" id="name" name="name"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="adress">Osoite:</label>
+            </div>
+            <div class="col-75"> 
+                <input type="text" id="adress" name="adress"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Maa:</label>
+            </div>
+            <div class="col-75">    
+                <select id="country" name="country">
+                    <option value="Valitse maa">(Valitse maa)</option>
+                    <option value="Afghanistan">Afganistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">Amerikan Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Anguilla">Anguilla</option>
+                    <option value="Antartica">Etelämanner</option>
+                    <option value="Antigua and Barbuda">Antigua ja Barbuda</option>
+                    <option value="Argentina">Argentiina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Aruba">Aruba</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Itävalta</option>
+                    <option value="Azerbaijan">Azerbaidžan</option>
+                    <option value="Bahamas">Bahama</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Valko-Venäjä</option>
+                    <option value="Belgium">Belgia</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegowina">Bosnia ja Herzegowina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Bouvet Island">Bouvetin saari</option>
+                    <option value="Brazil">Brazilia</option>
+                    <option value="British Indian Ocean Territory">Brittiläinen Intian valtameren alue</option>
+                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cambodia">Kambodža</option>
+                    <option value="Cameroon">Kamerun</option>
+                    <option value="Canada">Kanada</option>
+                    <option value="Cape Verde">Kap Verde</option>
+                    <option value="Cayman Islands">Caymansaaret</option>
+                    <option value="Central African Republic">Keski-Afrikan tasavalta</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">Kiina</option>
+                    <option value="Christmas Island">Joulusaari</option>
+                    <option value="Cocos Islands">Kookossaaret (Keeling)</option>
+                    <option value="Colombia">Kolumbia</option>
+                    <option value="Comoros">Komorit</option>
+                    <option value="Congo">Kongo</option>
+                    <option value="Congo">Kongo, demokraattinen tasavalta</option>
+                    <option value="Cook Islands">Cookin saaret</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cota D'Ivoire">Norsunluurannikko</option>
+                    <option value="Croatia">Kroatia</option>
+                    <option value="Cuba">Kuuba</option>
+                    <option value="Cyprus">Kypros</option>
+                    <option value="Czech Republic">Tšekin tasavalta</option>
+                    <option value="Denmark">Tanska</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominikaaninen tasavalta</option>
+                    <option value="East Timor">Itä-timoria</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypti</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Päiväntasaajan Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Viro</option>
+                    <option value="Ethiopia">Etiopia</option>
+                    <option value="Falkland Islands">Falklandinsaaret (Malviinit)</option>
+                    <option value="Faroe Islands">Färsaaret</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Suomi</option>
+                    <option value="France">Ranska</option>
+                    <option value="France Metropolitan">Ranska, Metropolitan</option>
+                    <option value="French Guiana">Ranskan Guayana</option>
+                    <option value="French Polynesia">Ranskan Polynesia</option>
+                    <option value="French Southern Territories">Ranskan eteläiset alueet</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Saksa</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Gibraltar">Gibraltar</option>
+                    <option value="Greece">Kreikka</option>
+                    <option value="Greenland">Grönlanti</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guadeloupe">Guadeloupe</option>
+                    <option value="Guam">Guam</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Heard and McDonald Islands">Heard ja McDonaldinsaaret</option>
+                    <option value="Holy See">Vatikaanivaltio</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Hungary">Unkari</option>
+                    <option value="Iceland">Islanti</option>
+                    <option value="India">Intia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Irak</option>
+                    <option value="Ireland">Irlanti</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italia</option>
+                    <option value="Jamaica">Jamaika</option>
+                    <option value="Japan">Japani</option>
+                    <option value="Jordan">Jordania</option>
+                    <option value="Kazakhstan">Kazakstan</option>
+                    <option value="Kenya">Kenia</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="Democratic People's Republic of Korea">Pohjois-Korea</option>
+                    <option value="Korea">Etelä-Korea</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Lao">Lao People's Democratic Republic</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Libanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libyan Arab Jamahiriya">Libyan arabien Jamahiriya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Liettua</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Macau">Macao</option>
+                    <option value="Macedonia">Makedonia</option>
+                    <option value="Madagascar">Madagaskar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malesia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshallin saaret</option>
+                    <option value="Martinique">Martinique</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mayotte">Mayotte</option>
+                    <option value="Mexico">Mexiko</option>
+                    <option value="Micronesia">Mikronesia</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montserrat">Montserrat</option>
+                    <option value="Morocco">Morokko</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Alankomaat</option>
+                    <option value="Netherlands Antilles">Alankomaiden Antillit</option>
+                    <option value="New Caledonia">Uusi-Kaledonia</option>
+                    <option value="New Zealand">Uusi-Seelanti</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Niue">Niue</option>
+                    <option value="Norfolk Island">Norfolkin saari</option>
+                    <option value="Northern Mariana Islands">Pohjois-Mariaanit</option>
+                    <option value="Norway">Norja</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua-Uusi-Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Filippiinit</option>
+                    <option value="Pitcairn">Pitcairn</option>
+                    <option value="Poland">Puola</option>
+                    <option value="Portugal">Portugali</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Reunion">Reunion</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Venäjä</option>
+                    <option value="Rwanda">Ruanda</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts ja Nevis</option> 
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Saint Vincent">Saint Vincent ja Grenadiinit</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome ja Principe</option> 
+                    <option value="Saudi Arabia">Saudi-Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Seychelles">Seychellit</option>
+                    <option value="Sierra">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomonsaaret</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">Etelä-Afrikka</option>
+                    <option value="South Georgia">Etelä-Georgia</option>
+                    <option value="Span">Espanja</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="St. Helena">St. Helena</option>
+                    <option value="St. Pierre and Miguelon">St. Pierre ja Miquelon</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Svalbard">Huippuvuoret</option>
+                    <option value="Swaziland">Eswatitin kuningaskunta</option>
+                    <option value="Sweden">Ruotsi</option>
+                    <option value="Switzerland">Sveitsi</option>
+                    <option value="Syria">Syyria</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikistan">Tadžikistan</option>
+                    <option value="Tanzania">Tansania</option>
+                    <option value="Thailand">Thaimaa</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tokelau">Tokelau</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad ja Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkki</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Turks and Caicos">Turks- ja Caicossaaret</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraina</option>
+                    <option value="United Arab Emirates">Yhdistyneet arabiemiirikunnat</option>
+                    <option value="United Kingdom">Yhdistynyt kuningaskunta</option>
+                    <option value="United States Minor Outlying Islands">Yhdysvaltain pienet syrjäiset saaret</option>
+                    <option value="United States">Yhdysvallat</option>
+                    <option value="Uruguay">Unkari</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Virgin Islands (British)">Neitsytsaaret (Britti)</option>
+                    <option value="Virgin Islands (U.S)">Neitsytsaaret (USA)</option>
+                    <option value="Wallis and Futana Islands">Wallis ja Futuna saaret</option>
+                    <option value="Western Sahara">Länsi-Sahara</option>
+                    <option value="Yemen">Jemen</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Zambia">Sambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="zip">Postinumero:</label>
+            </div>
+            <div class="col-75">   
+                <input type="text" id="zip" name="zip"><br><br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Sähköpostiosoite:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="email" name="email"><br><br>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="gender">Sukupuoli:</label>
+            </div>
+            <div class="col-75">  
+                <input type="radio" id="man" name="gender" value="man">
+                <label for="man">Mies</label>
+                <input type="radio" id="woman" name="gender" value="woman">
+                <label for="woman">Nainen</label><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="language">Kieli:</label>
+            </div>
+            <div class="col-75"> 
+                <input type="checkbox" id="finnish" name="language" value="finnish">
+                <label for="finnish">Suomi</label>
+                <input type="checkbox" id="other_lang" name="language" value="other_lang">
+                <label for="Other_lang">Muu kuin suomi</label><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="extra">Lisätietoja:</label>
+            </div>
+            <div class="col-75">    
+                <input type="text" id="extra" name="extra"><br><br>
+            </div>
+        </div>
+<!--Lähetys-painikkeesta estetään lähetys ja tarkastetaan kenttien validisuus-->
+        <div>
+            <button type="submit">Lähetä</button>
+        </div>
+    </form>
+    <div id="errorMessages" class="error"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

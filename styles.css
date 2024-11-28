@@ -1,0 +1,44 @@
+
+p {
+    font-weight: bold; 
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+/*Tekstikenttien muotoilut*/
+input[type=text], select, textarea, #password {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+
+.error {
+    color: red;
+}
+
+/*lisätietokenttä*/
+#extra {
+    height: 100px;
+}
